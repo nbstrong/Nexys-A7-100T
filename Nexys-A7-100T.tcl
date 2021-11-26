@@ -18,7 +18,18 @@
 proc checkRequiredFiles { origin_dir} {
   set status true
   set files [list \
+   "Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" \
+  ]
+  foreach ifile $files {
+    if { ![file isfile $ifile] } {
+      puts " Could not find local file $ifile "
+      set status false
+    }
+  }
+
+  set files [list \
    "${origin_dir}/hdl/rtl/top.vhd" \
+   "${origin_dir}/dc/Nexys-A7-100T-Master.xdc" \
    "${origin_dir}/hdl/behav/tb.sv" \
   ]
   foreach ifile $files {
@@ -173,7 +184,13 @@ if {[string equal [get_filesets -quiet constrs_1] ""]} {
 # Set 'constrs_1' fileset object
 set obj [get_filesets constrs_1]
 
-# Empty (no sources present)
+# Add/Import constrs file and set constrs file properties
+set file "[file normalize "$origin_dir/dc/Nexys-A7-100T-Master.xdc"]"
+set file_added [add_files -norecurse -fileset $obj [list $file]]
+set file "$origin_dir/dc/Nexys-A7-100T-Master.xdc"
+set file [file normalize $file]
+set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+set_property -name "file_type" -value "XDC" -objects $file_obj
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
@@ -210,7 +227,20 @@ set_property -name "xsim.simulate.runtime" -value "" -objects $obj
 
 # Set 'utils_1' fileset object
 set obj [get_filesets utils_1]
-# Empty (no sources present)
+# Add local files from the original project (-no_copy_sources specified)
+set files [list \
+ [file normalize "${origin_dir}/vivado_project/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" ]\
+]
+set added_files [add_files -fileset utils_1 $files]
+
+# Set 'utils_1' fileset file properties for remote files
+# None
+
+# Set 'utils_1' fileset file properties for local files
+set file "synth_1/top.dcp"
+set file_obj [get_files -of_objects [get_filesets utils_1] [list "*$file"]]
+set_property -name "netlist_only" -value "0" -objects $file_obj
+
 
 # Set 'utils_1' fileset properties
 set obj [get_filesets utils_1]
@@ -526,6 +556,7 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
+set_property -name "incremental_checkpoint" -value "$proj_dir/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
 

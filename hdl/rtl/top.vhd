@@ -19,33 +19,49 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 -- library UNISIM;
 -- use UNISIM.VComponents.all;
--- use IEEE.NUMERIC_STD.ALL;
-
+----------------------------------------------------------------------------------
 entity top is
     Port (
         sys_clock_0 : in    std_logic;
         reset_0     : in    std_logic
         );
-end top;
-
+    end top;
+----------------------------------------------------------------------------------
 architecture rtl of top is
-
+    -- CONSTANTS -----------------------------------------------------------------
+    -- SIGNALS -------------------------------------------------------------------
+    signal counter : unsigned(26 downto 0);
+    -- ALIASES -------------------------------------------------------------------
+    alias clk : std_logic is sys_clock_0;
+    alias rst : std_logic is reset_0;
+    -- ATTRIBUTES ----------------------------------------------------------------
+    -- COMPONENTS ----------------------------------------------------------------
     component microblaze_wrapper is
         port (
           sys_clock_0 : in STD_LOGIC;
           reset_0     : in STD_LOGIC
         );
         end component microblaze_wrapper;
-
-begin
+begin ----------------------------------------------------------------------------
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if rst = '1' then
+                counter <= (others => '0');
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
 
     microblaze_wrapper_0 : component microblaze_wrapper
-    -- microblaze_wrapper_0 : entity microblaze_wrapper(structural)
+    -- microblaze_wrapper_0 : entity microblaze_wrapper(structural) -- TODO: Make this work.
         port map (
-            sys_clock_0 => sys_clock_0,
-            reset_0     => reset_0
+            sys_clock_0 => clk,
+            reset_0     => rst
         );
 
-end rtl;
+end rtl; -------------------------------------------------------------------------
