@@ -1,4 +1,6 @@
 #include "xparameters.h"
+#include "xuartlite_l.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -8,9 +10,6 @@ void outbyte(char c);
 }
 #endif 
 
-#ifndef VERSAL_PLM
-void outbyte(char c)
-{
-    (void) c;
+void outbyte(char c) {
+	 XUartLite_SendByte(STDOUT_BASEADDRESS, c);
 }
-#endif

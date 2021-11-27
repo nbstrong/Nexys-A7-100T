@@ -14,3 +14,214 @@
 01:16:40 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
 01:16:40 INFO  : Result from executing command 'getPlatforms': 
 01:17:12 INFO  : No changes in MSS file content so sources will not be generated.
+03:38:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive Z:\git_wa\vivado\Nexys-A7-100T\sw\vitis_project\temp_xsdb_launch_script.tcl
+03:38:55 INFO  : XSCT server has started successfully.
+03:38:55 INFO  : Registering command handlers for Vitis TCF services
+03:38:55 INFO  : Platform repository initialization has completed.
+03:38:55 INFO  : plnx-install-location is set to ''
+03:38:55 INFO  : Successfully done setting XSCT server connection channel  
+03:38:55 INFO  : Successfully done query RDI_DATADIR 
+03:38:55 INFO  : Successfully done setting workspace for the tool. 
+03:39:35 INFO  : Hardware specification for platform project 'Nexys-A7-100T_platform' is updated.
+03:39:55 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
+03:39:55 INFO  : Result from executing command 'getPlatforms': Nexys-A7-100T_platform|Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/export/Nexys-A7-100T_platform/Nexys-A7-100T_platform.xpfm
+03:43:58 INFO  : Result from executing command 'removePlatformRepo': 
+03:44:08 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
+03:44:08 INFO  : Result from executing command 'getPlatforms': 
+04:01:26 INFO  : Hardware specification for platform project 'Nexys-A7-100T_platform' is updated.
+04:01:39 INFO  : Result from executing command 'removePlatformRepo': 
+04:01:53 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
+04:01:53 INFO  : Result from executing command 'getPlatforms': 
+04:05:29 ERROR : Internal exception while opening bsp settings dailog.
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.internal.SwDb.getDriversForHwComponent(SwDb.java:588)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriverAssignment(SwDriversPresenter.java:109)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriversFromPlatform(SwDriversPresenter.java:90)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.viewReady(SwDriversPresenter.java:55)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.viewReady(BspSettingsPresenter.java:111)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsView.createDialogArea(BspSettingsView.java:134)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.createContents(TitleAreaDialog.java:161)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.open(BspSettingsPresenter.java:99)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlowInternal(BspSettingsFlow.java:80)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlow(BspSettingsFlow.java:58)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$5(ScwStandaloneBspSettingsUi.java:188)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:237)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:820)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:853)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:829)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.changeBspSettings(ScwStandaloneBspSettingsUi.java:167)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$2(ScwStandaloneBspSettingsUi.java:125)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+04:05:36 ERROR : Internal exception while opening bsp settings dailog.
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.internal.SwDb.getDriversForHwComponent(SwDb.java:588)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriverAssignment(SwDriversPresenter.java:109)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriversFromPlatform(SwDriversPresenter.java:90)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.viewReady(SwDriversPresenter.java:55)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.viewReady(BspSettingsPresenter.java:111)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsView.createDialogArea(BspSettingsView.java:134)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.createContents(TitleAreaDialog.java:161)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.open(BspSettingsPresenter.java:99)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlowInternal(BspSettingsFlow.java:80)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlow(BspSettingsFlow.java:58)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$5(ScwStandaloneBspSettingsUi.java:188)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:237)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:820)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:853)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:829)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.changeBspSettings(ScwStandaloneBspSettingsUi.java:167)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$2(ScwStandaloneBspSettingsUi.java:125)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+04:06:26 INFO  : Hardware specification for platform project 'Nexys-A7-100T_platform' is updated.
+04:06:36 INFO  : Result from executing command 'removePlatformRepo': 
+04:06:48 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
+04:06:48 INFO  : Result from executing command 'getPlatforms': 
+04:07:26 ERROR : Internal exception while opening bsp settings dailog.
+java.lang.NullPointerException
+	at com.xilinx.sdk.sw.internal.SwDb.getDriversForHwComponent(SwDb.java:588)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriverAssignment(SwDriversPresenter.java:109)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.createDriversFromPlatform(SwDriversPresenter.java:90)
+	at com.xilinx.sdx.sw.ui.internal.SwDriversPresenter.viewReady(SwDriversPresenter.java:55)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.viewReady(BspSettingsPresenter.java:111)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsView.createDialogArea(BspSettingsView.java:134)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.createContents(TitleAreaDialog.java:161)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.xilinx.sdx.sw.ui.internal.BspSettingsPresenter.open(BspSettingsPresenter.java:99)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlowInternal(BspSettingsFlow.java:80)
+	at com.xilinx.sdx.sw.ui.BspSettingsFlow.executeFlow(BspSettingsFlow.java:58)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$5(ScwStandaloneBspSettingsUi.java:188)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:237)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:820)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:853)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:829)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.changeBspSettings(ScwStandaloneBspSettingsUi.java:167)
+	at com.xilinx.sdx.scw.ui.editor.ScwStandaloneBspSettingsUi.lambda$2(ScwStandaloneBspSettingsUi.java:125)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+04:10:37 INFO  : Result from executing command 'removePlatformRepo': 
+04:11:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive Z:\git_wa\vivado\Nexys-A7-100T\sw\vitis_project\temp_xsdb_launch_script.tcl
+04:11:05 INFO  : Registering command handlers for Vitis TCF services
+04:11:05 INFO  : Platform repository initialization has completed.
+04:11:06 INFO  : XSCT server has started successfully.
+04:11:06 INFO  : plnx-install-location is set to ''
+04:11:06 INFO  : Successfully done setting XSCT server connection channel  
+04:11:06 INFO  : Successfully done query RDI_DATADIR 
+04:11:06 INFO  : Successfully done setting workspace for the tool. 
+04:11:34 INFO  : Hardware specification for platform project 'Nexys-A7-100T_platform' is updated.
+04:13:17 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+04:13:45 INFO  : No changes in MSS file content so sources will not be generated.
+04:13:57 INFO  : Result from executing command 'getProjects': Nexys-A7-100T_platform
+04:13:57 INFO  : Result from executing command 'getPlatforms': 
+04:16:09 INFO  : Checking for BSP changes to sync application flags for project 'Nexys-A7-100T_application'...

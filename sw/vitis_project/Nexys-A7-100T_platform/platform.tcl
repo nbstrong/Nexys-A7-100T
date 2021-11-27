@@ -20,3 +20,35 @@ platform generate
 platform clean
 platform generate
 bsp reload
+platform active {Nexys-A7-100T_platform}
+bsp reload
+platform config -updatehw {Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa}
+platform clean
+platform generate
+bsp reload
+catch {bsp regenerate}
+platform config -updatehw {Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa}
+platform config -updatehw {Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa}
+platform clean
+platform generate
+bsp reload
+platform clean
+platform active {Nexys-A7-100T_platform}
+platform config -updatehw {Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa}
+bsp reload
+bsp config stdout "axi_uartlite_0"
+bsp config stdin "axi_uartlite_0"
+bsp config sleep_timer "axi_timer_0"
+bsp config clocking "false"
+bsp config lockstep_mode_debug "false"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform clean
+bsp config ttc_select_cntr "2"
+bsp reload
+platform generate
