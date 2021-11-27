@@ -25,8 +25,20 @@ use IEEE.NUMERIC_STD.ALL;
 ----------------------------------------------------------------------------------
 entity top is
     Port (
-        sys_clock_0 : in    std_logic;
-        reset_0     : in    std_logic
+        CLK100MHZ    : in    std_logic;
+        CPU_RESETN   : in    std_logic;
+        SW           : in    std_logic_vector(15 downto 0);
+        LED          :   out std_logic_vector(15 downto 0);
+        LED16_B      :   out std_logic;
+        LED16_G      :   out std_logic;
+        LED16_R      :   out std_logic;
+        LED17_B      :   out std_logic;
+        LED17_G      :   out std_logic;
+        LED17_R      :   out std_logic;
+        UART_TXD_IN  : in    std_logic;
+        UART_RXD_OUT :   out std_logic;
+        UART_CTS     :   out std_logic;
+        UART_RTS     : in    std_logic;
         );
     end top;
 ----------------------------------------------------------------------------------
@@ -35,8 +47,8 @@ architecture rtl of top is
     -- SIGNALS -------------------------------------------------------------------
     signal counter : unsigned(26 downto 0);
     -- ALIASES -------------------------------------------------------------------
-    alias clk : std_logic is sys_clock_0;
-    alias rst : std_logic is reset_0;
+    alias clk   : std_logic is CLK100MHZ;
+    alias rst_n : std_logic is CPU_RESETN;
     -- ATTRIBUTES ----------------------------------------------------------------
     -- COMPONENTS ----------------------------------------------------------------
     component microblaze_wrapper is
@@ -46,10 +58,12 @@ architecture rtl of top is
         );
         end component microblaze_wrapper;
 begin ----------------------------------------------------------------------------
+    LED     <= SW;
+    LED17_R <= counter(counter'left);
     process(clk)
     begin
         if rising_edge(clk) then
-            if rst = '1' then
+            if rst_n = '0' then
                 counter <= (others => '0');
             else
                 counter <= counter + 1;
@@ -61,7 +75,7 @@ begin --------------------------------------------------------------------------
     -- microblaze_wrapper_0 : entity microblaze_wrapper(structural) -- TODO: Make this work.
         port map (
             sys_clock_0 => clk,
-            reset_0     => rst
+            reset_0     => rst_n
         );
 
 end rtl; -------------------------------------------------------------------------

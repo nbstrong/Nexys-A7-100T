@@ -1,0 +1,1321 @@
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened new HwDB with name top_0
+TRACE::2021-11-27.01:14:39::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-11-27.01:14:39::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform"
+		}]
+}
+TRACE::2021-11-27.01:14:39::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-11-27.01:14:39::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2021-11-27.01:14:39::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform"
+		}]
+}
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWDomain::checking for install qemu data   : 
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:39::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:39::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-27.01:14:39::SCWMssOS::No sw design opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::mss does not exists at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::Creating sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::Adding the swdes entry, created swdb Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::updating the scw layer changes to swdes at   Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::Writing mss at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:39::SCWMssOS::Completed writing the mss file at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp
+TRACE::2021-11-27.01:14:39::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-11-27.01:14:39::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-11-27.01:14:39::SCWMssOS::Completed writing the mss file at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp
+TRACE::2021-11-27.01:14:39::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Adding the swdes entry, mss present, able to open swdb Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-11-27.01:14:43::SCWMssOS::Writing the mss file completed Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-11-27.01:14:43::SCWPlatform::Started generating the artifacts platform Nexys-A7-100T_platform
+TRACE::2021-11-27.01:14:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-27.01:14:43::SCWPlatform::Started generating the artifacts for system configuration Nexys-A7-100T_platform
+LOG::2021-11-27.01:14:43::SCWSystem::Checking the domain standalone_domain
+LOG::2021-11-27.01:14:43::SCWSystem::Not a boot domain 
+LOG::2021-11-27.01:14:43::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-11-27.01:14:43::SCWDomain::Generating domain artifcats
+TRACE::2021-11-27.01:14:43::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-27.01:14:43::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Completed writing the mss file at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp
+TRACE::2021-11-27.01:14:43::SCWMssOS::Mss edits present, copying mssfile into export location Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-27.01:14:43::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-27.01:14:43::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-11-27.01:14:43::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-11-27.01:14:43::SCWMssOS::Copying to export directory.
+TRACE::2021-11-27.01:14:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-27.01:14:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-27.01:14:43::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-11-27.01:14:43::SCWSystem::Completed Processing the sysconfig Nexys-A7-100T_platform
+LOG::2021-11-27.01:14:43::SCWPlatform::Completed generating the artifacts for system configuration Nexys-A7-100T_platform
+TRACE::2021-11-27.01:14:43::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-27.01:14:43::SCWSystem::Writing the bif file for system config Nexys-A7-100T_platform
+TRACE::2021-11-27.01:14:43::SCWSystem::dir created 
+TRACE::2021-11-27.01:14:43::SCWSystem::Writing the bif 
+TRACE::2021-11-27.01:14:43::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-27.01:14:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-27.01:14:43::SCWPlatform::Completed generating the platform
+TRACE::2021-11-27.01:14:43::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-27.01:14:43::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-11-27.01:14:43::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:14:43::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:43::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Trying to set the existing hwdb with name top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Opened existing hwdb top_0
+TRACE::2021-11-27.01:14:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:43::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:43::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:43::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-11-27.01:14:44::SCWPlatform::Clearing the existing platform
+TRACE::2021-11-27.01:14:44::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-11-27.01:14:44::SCWMssOS::Removing the swdes entry for  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWSystem::Clearing the domains completed.
+TRACE::2021-11-27.01:14:44::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform location is Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Removing the HwDB with name Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened new HwDB with name top_1
+TRACE::2021-11-27.01:14:44::SCWReader::Active system found as  Nexys-A7-100T_platform
+TRACE::2021-11-27.01:14:44::SCWReader::Handling sysconfig Nexys-A7-100T_platform
+TRACE::2021-11-27.01:14:44::SCWDomain::checking for install qemu data   : 
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:44::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-27.01:14:44::SCWMssOS::No sw design opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::mss exists loading the mss file  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::Opened the sw design from mss  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::Adding the swdes entry Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-11-27.01:14:44::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-27.01:14:44::SCWMssOS::Opened the sw design.  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:14:44::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:14:44::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:14:44::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-11-27.01:14:44::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:14:44::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:14:44::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:14:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:14:44::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:14:44::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:14:44::SCWReader::No isolation master present  
+TRACE::2021-11-27.01:15:53::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:53::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:53::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:53::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:15:53::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:53::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:15:53::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:15:53::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:15:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:15:53::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:53::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:15:53::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::In reload Mss file.
+TRACE::2021-11-27.01:15:54::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:15:54::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:15:54::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:15:54::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:15:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:15:54::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-27.01:15:54::SCWMssOS::No sw design opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::mss exists loading the mss file  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::Opened the sw design from mss  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::Adding the swdes entry Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-11-27.01:15:54::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-27.01:15:54::SCWMssOS::Opened the sw design.  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:15:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:15:54::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:15:54::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:15:54::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:15:54::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:15:54::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:15:54::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:15:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:15:54::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:15:54::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:15:54::SCWMssOS::Removing the swdes entry for  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+LOG::2021-11-27.01:16:10::SCWPlatform::Started generating the artifacts platform Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:10::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-27.01:16:10::SCWPlatform::Started generating the artifacts for system configuration Nexys-A7-100T_platform
+LOG::2021-11-27.01:16:10::SCWSystem::Checking the domain standalone_domain
+LOG::2021-11-27.01:16:10::SCWSystem::Not a boot domain 
+LOG::2021-11-27.01:16:10::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-11-27.01:16:10::SCWDomain::Generating domain artifcats
+TRACE::2021-11-27.01:16:10::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-27.01:16:10::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-27.01:16:10::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:10::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:10::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:10::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:10::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:10::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:10::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:10::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:10::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-27.01:16:10::SCWMssOS::No sw design opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::mss exists loading the mss file  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::Opened the sw design from mss  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::Adding the swdes entry Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-11-27.01:16:10::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-27.01:16:10::SCWMssOS::Opened the sw design.  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::Completed writing the mss file at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp
+TRACE::2021-11-27.01:16:10::SCWMssOS::Mss edits present, copying mssfile into export location Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:10::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-27.01:16:10::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-27.01:16:10::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-11-27.01:16:10::SCWMssOS::doing bsp build ... 
+TRACE::2021-11-27.01:16:10::SCWMssOS::System Command Ran  Z: & cd  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2021-11-27.01:16:10::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::make -j 2 --no-print-directory par_libs
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2021-11-27.01:16:10::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2021-11-27.01:16:10::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2021-11-27.01:16:10::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2021-11-27.01:16:10::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2021-11-27.01:16:10::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2021-11-27.01:16:10::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRACE::2021-11-27.01:16:10::SCWMssOS::TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2021-11-27.01:16:11::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2021-11-27.01:16:11::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2021-11-27.01:16:11::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2021-11-27.01:16:11::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2021-11-27.01:16:11::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2021-11-27.01:16:11::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2021-11-27.01:16:11::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::make --no-print-directory archive
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xil_testcache.o microblaze_0/lib/outbyte.o microblaze_0/lib/xil_sleepcommo
+TRACE::2021-11-27.01:16:14::SCWMssOS::n.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_disable
+TRACE::2021-11-27.01:16:14::SCWMssOS::_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o m
+TRACE::2021-11-27.01:16:14::SCWMssOS::icroblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xio.o microblaze_0/lib/mic
+TRACE::2021-11-27.01:16:14::SCWMssOS::roblaze_enable_icache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/microblaze_update_dcache.o microblaze
+TRACE::2021-11-27.01:16:14::SCWMssOS::_0/lib/xil_assert.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/micro
+TRACE::2021-11-27.01:16:14::SCWMssOS::blaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/_exit.o microblaze_0/lib/microblaze_enabl
+TRACE::2021-11-27.01:16:14::SCWMssOS::e_dcache.o microblaze_0/lib/inbyte.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xbram.o microblaze_0/lib/xil_misc_psreset_api.
+TRACE::2021-11-27.01:16:14::SCWMssOS::o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_invalidate_icache_range.o microblaze_0/lib/xbram_
+TRACE::2021-11-27.01:16:14::SCWMssOS::sinit.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalid
+TRACE::2021-11-27.01:16:14::SCWMssOS::ate_icache.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/
+TRACE::2021-11-27.01:16:14::SCWMssOS::errno.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/xil_util.o microblaze_0/lib/microblaze_disable_icache.
+TRACE::2021-11-27.01:16:14::SCWMssOS::o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/pvr.o mi
+TRACE::2021-11-27.01:16:14::SCWMssOS::croblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_exception.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xpla
+TRACE::2021-11-27.01:16:14::SCWMssOS::tform_info.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xil_cache.o m
+TRACE::2021-11-27.01:16:14::SCWMssOS::icroblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil
+TRACE::2021-11-27.01:16:14::SCWMssOS::_testio.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/fcntl.o
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-11-27.01:16:14::SCWMssOS::Copying to export directory.
+TRACE::2021-11-27.01:16:15::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-27.01:16:15::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-27.01:16:15::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-11-27.01:16:15::SCWSystem::Completed Processing the sysconfig Nexys-A7-100T_platform
+LOG::2021-11-27.01:16:15::SCWPlatform::Completed generating the artifacts for system configuration Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:15::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-27.01:16:15::SCWSystem::Writing the bif file for system config Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:15::SCWSystem::dir created 
+TRACE::2021-11-27.01:16:15::SCWSystem::Writing the bif 
+TRACE::2021-11-27.01:16:15::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-27.01:16:15::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-27.01:16:15::SCWPlatform::Completed generating the platform
+TRACE::2021-11-27.01:16:15::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:15::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:16:15::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:16:15::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:16:15::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:15::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:15::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:15::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:15::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:15::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:16:15::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:15::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-27.01:16:15::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-27.01:16:15::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:15::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:15::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:15::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:15::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:15::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:15::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:16:15::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:30::SCWMssOS::cleaning the bsp 
+TRACE::2021-11-27.01:16:30::SCWMssOS::System Command Ran  Z: & cd  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2021-11-27.01:16:30::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s clean 
+
+TRACE::2021-11-27.01:16:31::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s clean 
+
+TRACE::2021-11-27.01:16:31::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s clean 
+
+TRACE::2021-11-27.01:16:31::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2021-11-27.01:16:36::SCWPlatform::Started generating the artifacts platform Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:36::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-11-27.01:16:36::SCWPlatform::Started generating the artifacts for system configuration Nexys-A7-100T_platform
+LOG::2021-11-27.01:16:36::SCWSystem::Checking the domain standalone_domain
+LOG::2021-11-27.01:16:36::SCWSystem::Not a boot domain 
+LOG::2021-11-27.01:16:36::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-11-27.01:16:36::SCWDomain::Generating domain artifcats
+TRACE::2021-11-27.01:16:36::SCWMssOS::Generating standalone artifcats
+TRACE::2021-11-27.01:16:36::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-11-27.01:16:36::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:36::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:36::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:36::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:36::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:36::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:36::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:36::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:36::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:36::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:36::SCWMssOS::Completed writing the mss file at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp
+TRACE::2021-11-27.01:16:36::SCWMssOS::Mss edits present, copying mssfile into export location Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:36::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-11-27.01:16:36::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-11-27.01:16:36::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-11-27.01:16:36::SCWMssOS::doing bsp build ... 
+TRACE::2021-11-27.01:16:36::SCWMssOS::System Command Ran  Z: & cd  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2021-11-27.01:16:36::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::make -j 2 --no-print-directory par_libs
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2021-11-27.01:16:36::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2021-11-27.01:16:36::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2021-11-27.01:16:36::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2021-11-27.01:16:36::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2021-11-27.01:16:36::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2021-11-27.01:16:36::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRACE::2021-11-27.01:16:36::SCWMssOS::TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2021-11-27.01:16:37::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2021-11-27.01:16:37::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2021-11-27.01:16:37::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2021-11-27.01:16:37::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2021-11-27.01:16:37::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2021-11-27.01:16:37::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2021-11-27.01:16:37::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2021-11-27.01:16:39::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2021-11-27.01:16:39::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2021-11-27.01:16:39::SCWMssOS::make --no-print-directory archive
+
+TRACE::2021-11-27.01:16:39::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xil_testcache.o microblaze_0/lib/outbyte.o microblaze_0/lib/xil_sleepcommo
+TRACE::2021-11-27.01:16:39::SCWMssOS::n.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_disable
+TRACE::2021-11-27.01:16:39::SCWMssOS::_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o m
+TRACE::2021-11-27.01:16:39::SCWMssOS::icroblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xio.o microblaze_0/lib/mic
+TRACE::2021-11-27.01:16:39::SCWMssOS::roblaze_enable_icache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/microblaze_update_dcache.o microblaze
+TRACE::2021-11-27.01:16:39::SCWMssOS::_0/lib/xil_assert.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/micro
+TRACE::2021-11-27.01:16:39::SCWMssOS::blaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/_exit.o microblaze_0/lib/microblaze_enabl
+TRACE::2021-11-27.01:16:39::SCWMssOS::e_dcache.o microblaze_0/lib/inbyte.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xbram.o microblaze_0/lib/xil_misc_psreset_api.
+TRACE::2021-11-27.01:16:39::SCWMssOS::o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_invalidate_icache_range.o microblaze_0/lib/xbram_
+TRACE::2021-11-27.01:16:39::SCWMssOS::sinit.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalid
+TRACE::2021-11-27.01:16:39::SCWMssOS::ate_icache.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/
+TRACE::2021-11-27.01:16:39::SCWMssOS::errno.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/xil_util.o microblaze_0/lib/microblaze_disable_icache.
+TRACE::2021-11-27.01:16:39::SCWMssOS::o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/pvr.o mi
+TRACE::2021-11-27.01:16:39::SCWMssOS::croblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_exception.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xpla
+TRACE::2021-11-27.01:16:39::SCWMssOS::tform_info.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xil_cache.o m
+TRACE::2021-11-27.01:16:39::SCWMssOS::icroblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil
+TRACE::2021-11-27.01:16:39::SCWMssOS::_testio.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/fcntl.o
+
+TRACE::2021-11-27.01:16:39::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-11-27.01:16:40::SCWMssOS::Copying to export directory.
+TRACE::2021-11-27.01:16:40::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-11-27.01:16:40::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-11-27.01:16:40::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-11-27.01:16:40::SCWSystem::Completed Processing the sysconfig Nexys-A7-100T_platform
+LOG::2021-11-27.01:16:40::SCWPlatform::Completed generating the artifacts for system configuration Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:40::SCWPlatform::Started preparing the platform 
+TRACE::2021-11-27.01:16:40::SCWSystem::Writing the bif file for system config Nexys-A7-100T_platform
+TRACE::2021-11-27.01:16:40::SCWSystem::dir created 
+TRACE::2021-11-27.01:16:40::SCWSystem::Writing the bif 
+TRACE::2021-11-27.01:16:40::SCWPlatform::Started writing the spfm file 
+TRACE::2021-11-27.01:16:40::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-11-27.01:16:40::SCWPlatform::Completed generating the platform
+TRACE::2021-11-27.01:16:40::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:16:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:16:40::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:16:40::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:40::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:40::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:40::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:40::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:40::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:16:40::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:40::SCWWriter::formatted JSON is {
+	"platformName":	"Nexys-A7-100T_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Nexys-A7-100T_platform",
+	"platHandOff":	"Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Nexys-A7-100T_platform",
+	"systems":	[{
+			"systemName":	"Nexys-A7-100T_platform",
+			"systemDesc":	"Nexys-A7-100T_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Nexys-A7-100T_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"bd8e74bdce7fb54c840abdca7b8c2b56",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-11-27.01:16:40::SCWPlatform::updated the xpfm file.
+TRACE::2021-11-27.01:16:40::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:16:40::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:16:40::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:16:40::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:16:40::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:16:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:16:40::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:16:40::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:16:40::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:09::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:09::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:09::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:09::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:17:09::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:09::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:17:09::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:17:09::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:17:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:17:09::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:09::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:17:09::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::In reload Mss file.
+TRACE::2021-11-27.01:17:12::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:17:12::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:17:12::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:17:12::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:17:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:17:12::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-11-27.01:17:12::SCWMssOS::No sw design opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::mss exists loading the mss file  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::Opened the sw design from mss  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::Adding the swdes entry Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-11-27.01:17:12::SCWMssOS::updating the scw layer about changes
+TRACE::2021-11-27.01:17:12::SCWMssOS::Opened the sw design.  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::Saving the mss changes Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2021-11-27.01:17:12::SCWMssOS::Completed writemss as part of save.
+TRACE::2021-11-27.01:17:12::SCWMssOS::Commit changes completed.
+TRACE::2021-11-27.01:17:12::SCWPlatform::Trying to open the hw design at Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA given Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA absoulate path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform::DSA directory Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw
+TRACE::2021-11-27.01:17:12::SCWPlatform:: Platform Path Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/hw/top.xsa
+TRACE::2021-11-27.01:17:12::SCWPlatform:: Unique name xilinx:nexys-a7-100t::0.0
+TRACE::2021-11-27.01:17:12::SCWPlatform::Trying to set the existing hwdb with name top_1
+TRACE::2021-11-27.01:17:12::SCWPlatform::Opened existing hwdb top_1
+TRACE::2021-11-27.01:17:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-11-27.01:17:12::SCWMssOS::Checking the sw design at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::DEBUG:  swdes dump  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-11-27.01:17:12::SCWMssOS::Sw design exists and opened at  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-11-27.01:17:12::SCWMssOS::Removing the swdes entry for  Z:/git_wa/vivado/Nexys-A7-100T/sw/vitis_project/Nexys-A7-100T_platform/microblaze_0/standalone_domain/bsp/system.mss

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="100.001 ns"></ZoomEndTime>
+      <Cursor1Time time="100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="237"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/tb/msg" type="array">
+      <obj_property name="ElementShortName">msg[2048:1]</obj_property>
+      <obj_property name="ObjectShortName">msg[2048:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/CLK100MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/CPU_RESETN" type="logic">
+      <obj_property name="ElementShortName">CPU_RESETN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/SW" type="array">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED" type="array">
+      <obj_property name="ElementShortName">LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED16_B" type="logic">
+      <obj_property name="ElementShortName">LED16_B</obj_property>
+      <obj_property name="ObjectShortName">LED16_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED16_G" type="logic">
+      <obj_property name="ElementShortName">LED16_G</obj_property>
+      <obj_property name="ObjectShortName">LED16_G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED16_R" type="logic">
+      <obj_property name="ElementShortName">LED16_R</obj_property>
+      <obj_property name="ObjectShortName">LED16_R</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED17_B" type="logic">
+      <obj_property name="ElementShortName">LED17_B</obj_property>
+      <obj_property name="ObjectShortName">LED17_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED17_G" type="logic">
+      <obj_property name="ElementShortName">LED17_G</obj_property>
+      <obj_property name="ObjectShortName">LED17_G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/LED17_R" type="logic">
+      <obj_property name="ElementShortName">LED17_R</obj_property>
+      <obj_property name="ObjectShortName">LED17_R</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/counter" type="array">
+      <obj_property name="ElementShortName">counter[26:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[26:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/clk_wiz_0/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/clk_wiz_0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/clk_wiz_0/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/clk_wiz_0/clk_in1" type="logic">
+      <obj_property name="ElementShortName">clk_in1</obj_property>
+      <obj_property name="ObjectShortName">clk_in1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/slowest_sync_clk" type="logic">
+      <obj_property name="ElementShortName">slowest_sync_clk</obj_property>
+      <obj_property name="ObjectShortName">slowest_sync_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/ext_reset_in" type="logic">
+      <obj_property name="ElementShortName">ext_reset_in</obj_property>
+      <obj_property name="ObjectShortName">ext_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/aux_reset_in" type="logic">
+      <obj_property name="ElementShortName">aux_reset_in</obj_property>
+      <obj_property name="ObjectShortName">aux_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/mb_debug_sys_rst" type="logic">
+      <obj_property name="ElementShortName">mb_debug_sys_rst</obj_property>
+      <obj_property name="ObjectShortName">mb_debug_sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/dcm_locked" type="logic">
+      <obj_property name="ElementShortName">dcm_locked</obj_property>
+      <obj_property name="ObjectShortName">dcm_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/mb_reset" type="logic">
+      <obj_property name="ElementShortName">mb_reset</obj_property>
+      <obj_property name="ObjectShortName">mb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/bus_struct_reset" type="array">
+      <obj_property name="ElementShortName">bus_struct_reset[0:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_struct_reset[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/peripheral_reset" type="array">
+      <obj_property name="ElementShortName">peripheral_reset[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_reset[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/interconnect_aresetn" type="array">
+      <obj_property name="ElementShortName">interconnect_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">interconnect_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/microblaze_wrapper_0/microblaze_i/rst_sys_clock_100M/peripheral_aresetn" type="array">
+      <obj_property name="ElementShortName">peripheral_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_aresetn[0:0]</obj_property>
+   </wvobject>
+</wave_config>

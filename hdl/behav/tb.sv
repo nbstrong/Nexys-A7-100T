@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
 
-`define RST_ACTIVE_LEVEL 1
+`define RST_ACTIVE_LEVEL 0
 
 module tb();
 
@@ -30,8 +30,8 @@ module tb();
 
     // Instantiate design under test
     top dut (
-        .sys_clock_0(clk),
-        .reset_0(rst)
+        .CLK100MHZ(clk),
+        .CPU_RESETN(rst)
     );
 
     initial begin

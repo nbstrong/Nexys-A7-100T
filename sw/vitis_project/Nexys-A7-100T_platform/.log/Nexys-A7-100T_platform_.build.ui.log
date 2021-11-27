@@ -1,0 +1,79 @@
+2021-11-27T01:16:34.803509300255-01:16:34 **** Build of project Nexys-A7-100T_platform ****
+000-buildplatform.bat 58466 Nexys-A7-100T_platform  
+000-XSDB Server Channel: tcfchan#3
+000-Building the BSP Library for domain  - standalone_domain on processor microblaze_0
+000-make --no-print-directory seq_libs
+000-
+000-'Finished building libraries sequentially.'
+000-
+000-make -j 2 --no-print-directory par_libs
+000-
+000-"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+000-MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/cpu_v2_14/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+000-MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make include in microblaze_0/libsrc/standalone_v7_6/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+000-TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+000-LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make libs in microblaze_0/libsrc/cpu_v2_14/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+000-LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000-"Running Make libs in microblaze_0/libsrc/standalone_v7_6/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+000-_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+000-
+000/Nexys-A7-100T_platform73-1-1'#pragma message: For the sleep routines, assembly instructions are used'0-microblaze_sleep.c:73:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+000-   73 | #pragma message ("For the sleep routines, assembly instructions are used")
+000-      |         ^~~~~~~
+000-"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+000-
+000-'Finished building libraries parallelly.'
+000-
+000-make --no-print-directory archive
+000-
+000-mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xil_testcache.o microblaze_0/lib/outbyte.o microblaze_0/lib/xil_sleepcommo
+000-n.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_disable
+000-_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o m
+000-icroblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xio.o microblaze_0/lib/mic
+000-roblaze_enable_icache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/microblaze_update_dcache.o microblaze
+000-_0/lib/xil_assert.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/micro
+000-blaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/_exit.o microblaze_0/lib/microblaze_enabl
+000-e_dcache.o microblaze_0/lib/inbyte.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xbram.o microblaze_0/lib/xil_misc_psreset_api.
+000-o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_invalidate_icache_range.o microblaze_0/lib/xbram_
+000-sinit.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalid
+000-ate_icache.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/
+000-errno.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/xil_util.o microblaze_0/lib/microblaze_disable_icache.
+000-o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/pvr.o mi
+000-croblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_exception.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xpla
+000-tform_info.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xil_cache.o m
+000-icroblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil
+000-_testio.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/fcntl.o
+000-
+000-mb-ar: creating microblaze_0/lib/libxil.a
+000-'Finished building libraries'
+000-
+00255-
+01:16:40 Build Finished (took 5s.780ms)
+

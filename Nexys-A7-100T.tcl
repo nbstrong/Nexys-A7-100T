@@ -31,6 +31,7 @@ proc checkRequiredFiles { origin_dir} {
    "${origin_dir}/hdl/rtl/top.vhd" \
    "${origin_dir}/dc/Nexys-A7-100T-Master.xdc" \
    "${origin_dir}/hdl/behav/tb.sv" \
+   "${origin_dir}/sim/tb_behav.wcfg" \
   ]
   foreach ifile $files {
     if { ![file isfile $ifile] } {
@@ -138,6 +139,7 @@ set_property -name "revised_directory_structure" -value "1" -objects $obj
 set_property -name "sim.central_dir" -value "$proj_dir/${_xil_proj_name_}.ip_user_files" -objects $obj
 set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
 set_property -name "simulator_language" -value "Mixed" -objects $obj
+set_property -name "source_mgmt_mode" -value "DisplayOnly" -objects $obj
 set_property -name "target_language" -value "VHDL" -objects $obj
 set_property -name "webtalk.activehdl_export_sim" -value "4" -objects $obj
 set_property -name "webtalk.modelsim_export_sim" -value "4" -objects $obj
@@ -146,7 +148,7 @@ set_property -name "webtalk.questa_export_sim" -value "4" -objects $obj
 set_property -name "webtalk.riviera_export_sim" -value "4" -objects $obj
 set_property -name "webtalk.vcs_export_sim" -value "4" -objects $obj
 set_property -name "webtalk.xsim_export_sim" -value "4" -objects $obj
-set_property -name "webtalk.xsim_launch_sim" -value "9" -objects $obj
+set_property -name "webtalk.xsim_launch_sim" -value "19" -objects $obj
 set_property -name "xpm_libraries" -value "XPM_CDC XPM_MEMORY" -objects $obj
 
 # Create 'sources_1' fileset (if not found)
@@ -194,6 +196,8 @@ set_property -name "file_type" -value "XDC" -objects $file_obj
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
+set_property -name "target_constrs_file" -value "[file normalize "$origin_dir/dc/Nexys-A7-100T-Master.xdc"]" -objects $obj
+set_property -name "target_ucf" -value "[file normalize "$origin_dir/dc/Nexys-A7-100T-Master.xdc"]" -objects $obj
 
 # Create 'sim_1' fileset (if not found)
 if {[string equal [get_filesets -quiet sim_1] ""]} {
@@ -204,6 +208,7 @@ if {[string equal [get_filesets -quiet sim_1] ""]} {
 set obj [get_filesets sim_1]
 set files [list \
  [file normalize "${origin_dir}/hdl/behav/tb.sv"] \
+ [file normalize "${origin_dir}/sim/tb_behav.wcfg"] \
 ]
 add_files -norecurse -fileset $obj $files
 
@@ -223,7 +228,7 @@ set_property -name "top" -value "tb" -objects $obj
 set_property -name "top_auto_set" -value "0" -objects $obj
 set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
 set_property -name "xsim.simulate.log_all_signals" -value "1" -objects $obj
-set_property -name "xsim.simulate.runtime" -value "" -objects $obj
+set_property -name "xsim.simulate.runtime" -value "100 ns" -objects $obj
 
 # Set 'utils_1' fileset object
 set obj [get_filesets utils_1]
@@ -519,6 +524,37 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
   assign_bd_address -offset 0x00000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] -force
   assign_bd_address -offset 0x00000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] -force
 
+  # Perform GUI Layout
+  regenerate_bd_layout -layout_string {
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.86552",
+   "Default View_TopLeft":"-317,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_sys_clock_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 290 -y 190 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -x 290 -y 450 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -x 290 -y 620 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 1 -x 290 -y 780 -defaultsOSRD
+preplace inst reset_inv_0 -pg 1 -lvl 1 -x 290 -y 60 -defaultsOSRD
+preplace inst rst_sys_clock_100M -pg 1 -lvl 3 -x 740 -y 280 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 0 3 20 270 530 270 570J
+preplace netloc clk_wiz_0_locked 1 1 2 520 320 NJ
+preplace netloc mdm_1_debug_sys_rst 1 1 2 NJ 460 570
+preplace netloc reset_0_1 1 0 3 20 260 NJ 260 NJ
+preplace netloc reset_inv_0_Res 1 0 2 60 120 530
+preplace netloc rst_sys_clock_100M_bus_struct_reset 1 0 4 60 860 NJ 860 NJ 860 910
+preplace netloc rst_sys_clock_100M_mb_reset 1 0 4 40 380 NJ 380 NJ 380 920
+preplace netloc sys_clock_0_1 1 0 1 NJ 200
+preplace netloc microblaze_0_debug 1 0 2 30 370 520
+preplace netloc microblaze_0_dlmb_1 1 0 2 50 520 530
+preplace netloc microblaze_0_ilmb_1 1 0 2 60 530 520
+levelinfo -pg 1 0 290 550 740 940
+pagesize -pg 1 -db -bbox -sgen -130 0 940 870
+"
+}
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -556,6 +592,7 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
+set_property -name "needs_refresh" -value "1" -objects $obj
 set_property -name "incremental_checkpoint" -value "$proj_dir/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
@@ -779,6 +816,7 @@ set_property -name "options.warn_on_violation" -value "1" -objects $obj
 
 }
 set obj [get_runs impl_1]
+set_property -name "needs_refresh" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Implementation Defaults" -objects $obj
 set_property -name "steps.write_bitstream.args.readback_file" -value "0" -objects $obj
 set_property -name "steps.write_bitstream.args.verbose" -value "0" -objects $obj
