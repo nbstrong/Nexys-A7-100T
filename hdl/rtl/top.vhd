@@ -38,7 +38,7 @@ entity top is
         UART_TXD_IN  : in    std_logic;
         UART_RXD_OUT :   out std_logic;
         UART_CTS     :   out std_logic;
-        UART_RTS     : in    std_logic;
+        UART_RTS     : in    std_logic
         );
     end top;
 ----------------------------------------------------------------------------------
@@ -51,12 +51,14 @@ architecture rtl of top is
     alias rst_n : std_logic is CPU_RESETN;
     -- ATTRIBUTES ----------------------------------------------------------------
     -- COMPONENTS ----------------------------------------------------------------
-    component microblaze_wrapper is
+    component microblaze_0_wrapper is
         port (
-          sys_clock_0 : in STD_LOGIC;
-          reset_0     : in STD_LOGIC
+            CLK100MHZ : in STD_LOGIC;
+            CPU_RESETN : in STD_LOGIC;
+            UART_0_rxd : in STD_LOGIC;
+            UART_0_txd : out STD_LOGIC
         );
-        end component microblaze_wrapper;
+        end component microblaze_0_wrapper;
 begin ----------------------------------------------------------------------------
     LED     <= SW;
     LED17_R <= counter(counter'left);
@@ -71,11 +73,13 @@ begin --------------------------------------------------------------------------
         end if;
     end process;
 
-    microblaze_wrapper_0 : component microblaze_wrapper
+    microblaze_wrapper_0 : component microblaze_0_wrapper
     -- microblaze_wrapper_0 : entity microblaze_wrapper(structural) -- TODO: Make this work.
         port map (
-            sys_clock_0 => clk,
-            reset_0     => rst_n
+            CLK100MHZ  => (CLK100MHZ),
+            CPU_RESETN => (CPU_RESETN),
+            UART_0_rxd => (UART_TXD_IN),
+            UART_0_txd => (UART_RXD_OUT)
         );
 
 end rtl; -------------------------------------------------------------------------

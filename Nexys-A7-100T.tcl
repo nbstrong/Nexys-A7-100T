@@ -18,16 +18,6 @@
 proc checkRequiredFiles { origin_dir} {
   set status true
   set files [list \
-   "Z:/git_wa/vivado/Nexys-A7-100T/vivado_project/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" \
-  ]
-  foreach ifile $files {
-    if { ![file isfile $ifile] } {
-      puts " Could not find local file $ifile "
-      set status false
-    }
-  }
-
-  set files [list \
    "${origin_dir}/hdl/rtl/top.vhd" \
    "${origin_dir}/dc/Nexys-A7-100T-Master.xdc" \
    "${origin_dir}/hdl/behav/tb.sv" \
@@ -232,20 +222,7 @@ set_property -name "xsim.simulate.runtime" -value "100 ns" -objects $obj
 
 # Set 'utils_1' fileset object
 set obj [get_filesets utils_1]
-# Add local files from the original project (-no_copy_sources specified)
-set files [list \
- [file normalize "${origin_dir}/vivado_project/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" ]\
-]
-set added_files [add_files -fileset utils_1 $files]
-
-# Set 'utils_1' fileset file properties for remote files
-# None
-
-# Set 'utils_1' fileset file properties for local files
-set file "synth_1/top.dcp"
-set file_obj [get_files -of_objects [get_filesets utils_1] [list "*$file"]]
-set_property -name "netlist_only" -value "0" -objects $file_obj
-
+# Empty (no sources present)
 
 # Set 'utils_1' fileset properties
 set obj [get_filesets utils_1]
@@ -254,11 +231,11 @@ set obj [get_filesets utils_1]
 # Adding sources referenced in BDs, if not already added
 
 
-# Proc to create BD microblaze
-proc cr_bd_microblaze { parentCell } {
+# Proc to create BD microblaze_0
+proc cr_bd_microblaze_0 { parentCell } {
 
   # CHANGE DESIGN NAME HERE
-  set design_name microblaze
+  set design_name microblaze_0
 
   common::send_gid_msg -ssname BD::TCL -id 2010 -severity "INFO" "Currently there is no design <$design_name> in project, so creating one..."
 
@@ -271,11 +248,16 @@ proc cr_bd_microblaze { parentCell } {
   set bCheckIPs 1
   if { $bCheckIPs == 1 } {
      set list_check_ips "\ 
+  xilinx.com:ip:axi_timer:2.0\
+  xilinx.com:ip:axi_uartlite:2.0\
   xilinx.com:ip:clk_wiz:6.0\
   xilinx.com:ip:mdm:3.2\
   xilinx.com:ip:microblaze:11.0\
+  xilinx.com:ip:axi_intc:4.1\
+  xilinx.com:ip:xlconcat:2.1\
   xilinx.com:ip:util_vector_logic:2.0\
   xilinx.com:ip:proc_sys_reset:5.0\
+  xilinx.com:ip:system_ila:1.1\
   xilinx.com:ip:lmb_bram_if_cntlr:4.0\
   xilinx.com:ip:lmb_v10:3.0\
   xilinx.com:ip:blk_mem_gen:8.4\
@@ -343,15 +325,18 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
 
   create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 ILMB
 
+  create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 LMB_M
+
 
   # Create pins
+  create_bd_pin -dir I -type clk LMB_Clk
   create_bd_pin -dir I -type rst SYS_Rst
-  create_bd_pin -dir I -type clk sys_clock
 
   # Create instance: dlmb_bram_if_cntlr, and set properties
   set dlmb_bram_if_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 dlmb_bram_if_cntlr ]
   set_property -dict [ list \
    CONFIG.C_ECC {0} \
+   CONFIG.C_NUM_LMB {2} \
  ] $dlmb_bram_if_cntlr
 
   # Create instance: dlmb_v10, and set properties
@@ -373,6 +358,9 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
    CONFIG.use_bram_block {BRAM_Controller} \
  ] $lmb_bram
 
+  # Create instance: lmb_v10, and set properties
+  set lmb_v10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 lmb_v10 ]
+
   # Create interface connections
   connect_bd_intf_net -intf_net microblaze_0_dlmb [get_bd_intf_pins DLMB] [get_bd_intf_pins dlmb_v10/LMB_M]
   connect_bd_intf_net -intf_net microblaze_0_dlmb_bus [get_bd_intf_pins dlmb_bram_if_cntlr/SLMB] [get_bd_intf_pins dlmb_v10/LMB_Sl_0]
@@ -380,10 +368,12 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
   connect_bd_intf_net -intf_net microblaze_0_ilmb [get_bd_intf_pins ILMB] [get_bd_intf_pins ilmb_v10/LMB_M]
   connect_bd_intf_net -intf_net microblaze_0_ilmb_bus [get_bd_intf_pins ilmb_bram_if_cntlr/SLMB] [get_bd_intf_pins ilmb_v10/LMB_Sl_0]
   connect_bd_intf_net -intf_net microblaze_0_ilmb_cntlr [get_bd_intf_pins ilmb_bram_if_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram/BRAM_PORTB]
+  connect_bd_intf_net -intf_net microblaze_0_lmb [get_bd_intf_pins LMB_M] [get_bd_intf_pins lmb_v10/LMB_M]
+  connect_bd_intf_net -intf_net microblaze_0_lmb_bus [get_bd_intf_pins dlmb_bram_if_cntlr/SLMB1] [get_bd_intf_pins lmb_v10/LMB_Sl_0]
 
   # Create port connections
-  connect_bd_net -net SYS_Rst_1 [get_bd_pins SYS_Rst] [get_bd_pins dlmb_bram_if_cntlr/LMB_Rst] [get_bd_pins dlmb_v10/SYS_Rst] [get_bd_pins ilmb_bram_if_cntlr/LMB_Rst] [get_bd_pins ilmb_v10/SYS_Rst]
-  connect_bd_net -net microblaze_0_Clk [get_bd_pins sys_clock] [get_bd_pins dlmb_bram_if_cntlr/LMB_Clk] [get_bd_pins dlmb_v10/LMB_Clk] [get_bd_pins ilmb_bram_if_cntlr/LMB_Clk] [get_bd_pins ilmb_v10/LMB_Clk]
+  connect_bd_net -net SYS_Rst_1 [get_bd_pins SYS_Rst] [get_bd_pins dlmb_bram_if_cntlr/LMB_Rst] [get_bd_pins dlmb_v10/SYS_Rst] [get_bd_pins ilmb_bram_if_cntlr/LMB_Rst] [get_bd_pins ilmb_v10/SYS_Rst] [get_bd_pins lmb_v10/SYS_Rst]
+  connect_bd_net -net microblaze_0_Clk [get_bd_pins LMB_Clk] [get_bd_pins dlmb_bram_if_cntlr/LMB_Clk] [get_bd_pins dlmb_v10/LMB_Clk] [get_bd_pins ilmb_bram_if_cntlr/LMB_Clk] [get_bd_pins ilmb_v10/LMB_Clk] [get_bd_pins lmb_v10/LMB_Clk]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -416,80 +406,94 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
 
 
   # Create interface ports
+  set CLK100MHZ [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 CLK100MHZ ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {100000000} \
+   ] $CLK100MHZ
+
+  set UART_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART_0 ]
+
 
   # Create ports
-  set reset_0 [ create_bd_port -dir I -type rst reset_0 ]
+  set CLK100MHZ [ create_bd_port -dir I -type clk CLK100MHZ ]
+  set CPU_RESETN [ create_bd_port -dir I -type rst CPU_RESETN ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_LOW} \
- ] $reset_0
-  set sys_clock_0 [ create_bd_port -dir I -type clk -freq_hz 100000000 sys_clock_0 ]
-  set_property -dict [ list \
-   CONFIG.PHASE {0.0} \
- ] $sys_clock_0
+ ] $CPU_RESETN
 
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+  # Create instance: axi_timer_0, and set properties
+  set axi_timer_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0 ]
+
+  # Create instance: axi_uartlite_0, and set properties
+  set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]
+
+  # Create instance: clk_wiz_1, and set properties
+  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1 ]
   set_property -dict [ list \
    CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
+   CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
+   CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
    CONFIG.RESET_BOARD_INTERFACE {reset} \
    CONFIG.USE_BOARD_FLOW {true} \
- ] $clk_wiz_0
+ ] $clk_wiz_1
 
   # Create instance: mdm_1, and set properties
   set mdm_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_1 ]
+  set_property -dict [ list \
+   CONFIG.C_ADDR_SIZE {32} \
+   CONFIG.C_DBG_MEM_ACCESS {1} \
+   CONFIG.C_M_AXI_ADDR_WIDTH {32} \
+   CONFIG.C_USE_CROSS_TRIGGER {1} \
+ ] $mdm_1
 
   # Create instance: microblaze_0, and set properties
   set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0 ]
   set_property -dict [ list \
    CONFIG.C_ADDR_TAG_BITS {0} \
-   CONFIG.C_AREA_OPTIMIZED {1} \
    CONFIG.C_CACHE_BYTE_SIZE {4096} \
    CONFIG.C_DCACHE_ADDR_TAG {0} \
    CONFIG.C_DCACHE_BYTE_SIZE {4096} \
-   CONFIG.C_DCACHE_LINE_LEN {4} \
-   CONFIG.C_DCACHE_USE_WRITEBACK {0} \
-   CONFIG.C_DCACHE_VICTIMS {0} \
    CONFIG.C_DEBUG_ENABLED {2} \
-   CONFIG.C_DEBUG_INTERFACE {0} \
-   CONFIG.C_DIV_ZERO_EXCEPTION {0} \
    CONFIG.C_D_AXI {1} \
    CONFIG.C_D_LMB {1} \
    CONFIG.C_ENABLE_DISCRETE_PORTS {0} \
-   CONFIG.C_FPU_EXCEPTION {0} \
-   CONFIG.C_FSL_LINKS {0} \
-   CONFIG.C_ICACHE_LINE_LEN {4} \
-   CONFIG.C_ICACHE_STREAMS {0} \
-   CONFIG.C_ICACHE_VICTIMS {0} \
-   CONFIG.C_ILL_OPCODE_EXCEPTION {0} \
    CONFIG.C_I_LMB {1} \
    CONFIG.C_MMU_DTLB_SIZE {2} \
    CONFIG.C_MMU_ITLB_SIZE {1} \
    CONFIG.C_MMU_ZONES {2} \
-   CONFIG.C_M_AXI_D_BUS_EXCEPTION {0} \
-   CONFIG.C_M_AXI_I_BUS_EXCEPTION {0} \
-   CONFIG.C_NUMBER_OF_PC_BRK {1} \
-   CONFIG.C_NUMBER_OF_RD_ADDR_BRK {0} \
-   CONFIG.C_NUMBER_OF_WR_ADDR_BRK {0} \
-   CONFIG.C_OPCODE_0x0_ILLEGAL {0} \
-   CONFIG.C_PVR {0} \
-   CONFIG.C_UNALIGNED_EXCEPTIONS {0} \
    CONFIG.C_USE_BARREL {1} \
-   CONFIG.C_USE_BRANCH_TARGET_CACHE {0} \
    CONFIG.C_USE_DCACHE {0} \
-   CONFIG.C_USE_DIV {0} \
+   CONFIG.C_USE_DIV {1} \
    CONFIG.C_USE_FPU {0} \
-   CONFIG.C_USE_HW_MUL {1} \
+   CONFIG.C_USE_HW_MUL {0} \
    CONFIG.C_USE_ICACHE {0} \
-   CONFIG.C_USE_MMU {0} \
    CONFIG.C_USE_MSR_INSTR {1} \
    CONFIG.C_USE_PCMP_INSTR {1} \
-   CONFIG.C_USE_REORDER_INSTR {0} \
+   CONFIG.C_USE_REORDER_INSTR {1} \
    CONFIG.G_TEMPLATE_LIST {8} \
    CONFIG.G_USE_EXCEPTIONS {0} \
  ] $microblaze_0
 
+  # Create instance: microblaze_0_axi_intc, and set properties
+  set microblaze_0_axi_intc [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 microblaze_0_axi_intc ]
+  set_property -dict [ list \
+   CONFIG.C_HAS_FAST {1} \
+ ] $microblaze_0_axi_intc
+
+  # Create instance: microblaze_0_axi_periph, and set properties
+  set microblaze_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 microblaze_0_axi_periph ]
+  set_property -dict [ list \
+   CONFIG.ENABLE_ADVANCED_OPTIONS {0} \
+   CONFIG.NUM_MI {3} \
+   CONFIG.NUM_SI {2} \
+   CONFIG.STRATEGY {1} \
+ ] $microblaze_0_axi_periph
+
   # Create instance: microblaze_0_local_memory
   create_hier_cell_microblaze_0_local_memory [current_bd_instance .] microblaze_0_local_memory
+
+  # Create instance: microblaze_0_xlconcat, and set properties
+  set microblaze_0_xlconcat [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 microblaze_0_xlconcat ]
 
   # Create instance: reset_inv_0, and set properties
   set reset_inv_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 reset_inv_0 ]
@@ -498,63 +502,56 @@ proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
    CONFIG.C_SIZE {1} \
  ] $reset_inv_0
 
-  # Create instance: rst_sys_clock_100M, and set properties
-  set rst_sys_clock_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_sys_clock_100M ]
+  # Create instance: rst_clk_wiz_1_100M, and set properties
+  set rst_clk_wiz_1_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_1_100M ]
   set_property -dict [ list \
    CONFIG.RESET_BOARD_INTERFACE {reset} \
    CONFIG.USE_BOARD_FLOW {true} \
- ] $rst_sys_clock_100M
+ ] $rst_clk_wiz_1_100M
+
+  # Create instance: system_ila, and set properties
+  set system_ila [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila ]
+  set_property -dict [ list \
+   CONFIG.C_TRIGIN_EN {true} \
+   CONFIG.C_TRIGOUT_EN {true} \
+ ] $system_ila
 
   # Create interface connections
+  connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports UART_0] [get_bd_intf_pins axi_uartlite_0/UART]
+  connect_bd_intf_net -intf_net mdm_1_M_AXI [get_bd_intf_pins mdm_1/M_AXI] [get_bd_intf_pins microblaze_0_axi_periph/S01_AXI]
+  connect_bd_intf_net -intf_net mdm_1_TRIG_OUT_0 [get_bd_intf_pins mdm_1/TRIG_OUT_0] [get_bd_intf_pins system_ila/TRIG_IN]
+  connect_bd_intf_net -intf_net microblaze_0_axi_dp [get_bd_intf_pins microblaze_0/M_AXI_DP] [get_bd_intf_pins microblaze_0_axi_periph/S00_AXI]
+  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M01_AXI [get_bd_intf_pins axi_uartlite_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M01_AXI]
+  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M02_AXI [get_bd_intf_pins axi_timer_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net microblaze_0_debug [get_bd_intf_pins mdm_1/MBDEBUG_0] [get_bd_intf_pins microblaze_0/DEBUG]
   connect_bd_intf_net -intf_net microblaze_0_dlmb_1 [get_bd_intf_pins microblaze_0/DLMB] [get_bd_intf_pins microblaze_0_local_memory/DLMB]
   connect_bd_intf_net -intf_net microblaze_0_ilmb_1 [get_bd_intf_pins microblaze_0/ILMB] [get_bd_intf_pins microblaze_0_local_memory/ILMB]
+  connect_bd_intf_net -intf_net microblaze_0_intc_axi [get_bd_intf_pins microblaze_0_axi_intc/s_axi] [get_bd_intf_pins microblaze_0_axi_periph/M00_AXI]
+  connect_bd_intf_net -intf_net microblaze_0_interrupt [get_bd_intf_pins microblaze_0/INTERRUPT] [get_bd_intf_pins microblaze_0_axi_intc/interrupt]
+  connect_bd_intf_net -intf_net microblaze_0_lmb [get_bd_intf_pins mdm_1/LMB_0] [get_bd_intf_pins microblaze_0_local_memory/LMB_M]
+  connect_bd_intf_net -intf_net system_ila_TRIG_OUT [get_bd_intf_pins mdm_1/TRIG_IN_0] [get_bd_intf_pins system_ila/TRIG_OUT]
 
   # Create port connections
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_local_memory/sys_clock] [get_bd_pins rst_sys_clock_100M/slowest_sync_clk]
-  connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_sys_clock_100M/dcm_locked]
-  connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_sys_clock_100M/mb_debug_sys_rst]
-  connect_bd_net -net reset_0_1 [get_bd_ports reset_0] [get_bd_pins reset_inv_0/Op1] [get_bd_pins rst_sys_clock_100M/ext_reset_in]
-  connect_bd_net -net reset_inv_0_Res [get_bd_pins clk_wiz_0/reset] [get_bd_pins reset_inv_0/Res]
-  connect_bd_net -net rst_sys_clock_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_sys_clock_100M/bus_struct_reset]
-  connect_bd_net -net rst_sys_clock_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_sys_clock_100M/mb_reset]
-  connect_bd_net -net sys_clock_0_1 [get_bd_ports sys_clock_0] [get_bd_pins clk_wiz_0/clk_in1]
+  connect_bd_net -net CPU_RESETN_1 [get_bd_ports CPU_RESETN] [get_bd_pins reset_inv_0/Op1]
+  connect_bd_net -net axi_timer_0_interrupt [get_bd_pins axi_timer_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In0]
+  connect_bd_net -net axi_uartlite_0_interrupt [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In1]
+  connect_bd_net -net clk_in1_0_1 [get_bd_ports CLK100MHZ] [get_bd_pins clk_wiz_1/clk_in1]
+  connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
+  connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_debug_sys_rst]
+  connect_bd_net -net microblaze_0_Clk [get_bd_pins axi_timer_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins mdm_1/M_AXI_ACLK] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_axi_periph/S01_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk] [get_bd_pins system_ila/clk]
+  connect_bd_net -net microblaze_0_intr [get_bd_pins microblaze_0_axi_intc/intr] [get_bd_pins microblaze_0_xlconcat/dout]
+  connect_bd_net -net reset_inv_0_Res [get_bd_pins clk_wiz_1/reset] [get_bd_pins reset_inv_0/Res] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+  connect_bd_net -net rst_clk_wiz_1_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/bus_struct_reset]
+  connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
+  connect_bd_net -net rst_clk_wiz_1_100M_peripheral_aresetn [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins mdm_1/M_AXI_ARESETN] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins microblaze_0_axi_periph/S01_ARESETN] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
 
   # Create address segments
-  assign_bd_address -offset 0x00000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] -force
-  assign_bd_address -offset 0x00000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] -force
+  assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces mdm_1/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB1/Mem] -force
+  assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces mdm_1/Data] [get_bd_addr_segs microblaze_0_axi_intc/S_AXI/Reg] -force
+  assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] -force
+  assign_bd_address -offset 0x00000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] -force
+  assign_bd_address -offset 0x41200000 -range 0x00010000 -target_address_space [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_axi_intc/S_AXI/Reg] -force
 
-  # Perform GUI Layout
-  regenerate_bd_layout -layout_string {
-   "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.86552",
-   "Default View_TopLeft":"-317,0",
-   "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
-#  -string -flagsOSRD
-preplace port port-id_reset_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port port-id_sys_clock_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 290 -y 190 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 1 -x 290 -y 450 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 1 -x 290 -y 620 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 1 -x 290 -y 780 -defaultsOSRD
-preplace inst reset_inv_0 -pg 1 -lvl 1 -x 290 -y 60 -defaultsOSRD
-preplace inst rst_sys_clock_100M -pg 1 -lvl 3 -x 740 -y 280 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 0 3 20 270 530 270 570J
-preplace netloc clk_wiz_0_locked 1 1 2 520 320 NJ
-preplace netloc mdm_1_debug_sys_rst 1 1 2 NJ 460 570
-preplace netloc reset_0_1 1 0 3 20 260 NJ 260 NJ
-preplace netloc reset_inv_0_Res 1 0 2 60 120 530
-preplace netloc rst_sys_clock_100M_bus_struct_reset 1 0 4 60 860 NJ 860 NJ 860 910
-preplace netloc rst_sys_clock_100M_mb_reset 1 0 4 40 380 NJ 380 NJ 380 920
-preplace netloc sys_clock_0_1 1 0 1 NJ 200
-preplace netloc microblaze_0_debug 1 0 2 30 370 520
-preplace netloc microblaze_0_dlmb_1 1 0 2 50 520 530
-preplace netloc microblaze_0_ilmb_1 1 0 2 60 530 520
-levelinfo -pg 1 0 290 550 740 940
-pagesize -pg 1 -db -bbox -sgen -130 0 940 870
-"
-}
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -563,14 +560,14 @@ pagesize -pg 1 -db -bbox -sgen -130 0 940 870
   save_bd_design
   close_bd_design $design_name 
 }
-# End of cr_bd_microblaze()
-cr_bd_microblaze ""
-set_property REGISTERED_WITH_MANAGER "1" [get_files microblaze.bd ] 
-set_property SYNTH_CHECKPOINT_MODE "Hierarchical" [get_files microblaze.bd ] 
+# End of cr_bd_microblaze_0()
+cr_bd_microblaze_0 ""
+set_property REGISTERED_WITH_MANAGER "1" [get_files microblaze_0.bd ] 
+set_property SYNTH_CHECKPOINT_MODE "Hierarchical" [get_files microblaze_0.bd ] 
 
 
-# Create wrapper file for microblaze.bd
-make_wrapper -files [get_files microblaze.bd] -import -top
+# Create wrapper file for microblaze_0.bd
+make_wrapper -files [get_files microblaze_0.bd] -import -top
 
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs -quiet synth_1] ""]} {
@@ -592,8 +589,6 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
-set_property -name "needs_refresh" -value "1" -objects $obj
-set_property -name "incremental_checkpoint" -value "$proj_dir/Nexys-A7-100T.srcs/utils_1/imports/synth_1/top.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
 
@@ -816,7 +811,6 @@ set_property -name "options.warn_on_violation" -value "1" -objects $obj
 
 }
 set obj [get_runs impl_1]
-set_property -name "needs_refresh" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Implementation Defaults" -objects $obj
 set_property -name "steps.write_bitstream.args.readback_file" -value "0" -objects $obj
 set_property -name "steps.write_bitstream.args.verbose" -value "0" -objects $obj
