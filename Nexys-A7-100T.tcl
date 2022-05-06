@@ -133,7 +133,6 @@ set_property -name "webtalk.modelsim_export_sim" -value "1" -objects $obj
 set_property -name "webtalk.questa_export_sim" -value "1" -objects $obj
 set_property -name "webtalk.riviera_export_sim" -value "1" -objects $obj
 set_property -name "webtalk.vcs_export_sim" -value "1" -objects $obj
-set_property -name "webtalk.xcelium_export_sim" -value "1" -objects $obj
 set_property -name "webtalk.xsim_export_sim" -value "1" -objects $obj
 set_property -name "xpm_libraries" -value "XPM_MEMORY" -objects $obj
 
@@ -306,23 +305,6 @@ proc cr_bd_Nexys_A7_Block_Design { parentCell } {
 
   # Create address segments
 
-  # Perform GUI Layout
-  regenerate_bd_layout -layout_string {
-   "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-483,-379",
-   "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
-#  -string -flagsOSRD
-preplace port port-id_sys_clock -pg 1 -lvl 0 -x -10 -y -140 -defaultsOSRD
-preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y -120 -defaultsOSRD
-preplace inst microblaze_mcs_0 -pg 1 -lvl 1 -x 190 -y -130 -defaultsOSRD
-preplace netloc sys_clock_1 1 0 1 NJ -140
-preplace netloc reset_1 1 0 1 NJ -120
-levelinfo -pg 1 -10 190 380
-pagesize -pg 1 -db -bbox -sgen -130 -200 380 140
-"
-}
 
   # Restore current instance
   current_bd_instance $oldCurInst
