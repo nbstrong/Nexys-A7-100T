@@ -47,24 +47,22 @@ architecture rtl of top is
     -- SIGNALS -------------------------------------------------------------------
     signal counter : unsigned(26 downto 0);
     -- ALIASES -------------------------------------------------------------------
-    alias clk   : std_logic is CLK100MHZ;
-    alias rst_n : std_logic is CPU_RESETN;
+    alias sys_clk : std_logic is CLK100MHZ;
+    alias rst_n   : std_logic is CPU_RESETN;
     -- ATTRIBUTES ----------------------------------------------------------------
     -- COMPONENTS ----------------------------------------------------------------
-    component microblaze_0_wrapper is
+    component Nexys_A7_Block_Design_wrapper is
         port (
-            CLK100MHZ : in STD_LOGIC;
-            CPU_RESETN : in STD_LOGIC;
-            UART_0_rxd : in STD_LOGIC;
-            UART_0_txd : out STD_LOGIC
+          sys_clock : in std_logic;
+          reset     : in std_logic
         );
-        end component microblaze_0_wrapper;
+    end component Nexys_A7_Block_Design_wrapper;
 begin ----------------------------------------------------------------------------
     LED     <= SW;
     LED17_R <= counter(counter'left);
-    process(clk)
+    process(sys_clk)
     begin
-        if rising_edge(clk) then
+        if rising_edge(sys_clk) then
             if rst_n = '0' then
                 counter <= (others => '0');
             else
@@ -73,13 +71,11 @@ begin --------------------------------------------------------------------------
         end if;
     end process;
 
-    microblaze_wrapper_0 : component microblaze_0_wrapper
+    microblaze_wrapper_0 : component Nexys_A7_Block_Design_wrapper
     -- microblaze_wrapper_0 : entity microblaze_wrapper(structural) -- TODO: Make this work.
         port map (
-            CLK100MHZ  => (CLK100MHZ),
-            CPU_RESETN => (CPU_RESETN),
-            UART_0_rxd => (UART_TXD_IN),
-            UART_0_txd => (UART_RXD_OUT)
+            sys_clock => sys_clk,
+            reset     => rst_n
         );
 
 end rtl; -------------------------------------------------------------------------

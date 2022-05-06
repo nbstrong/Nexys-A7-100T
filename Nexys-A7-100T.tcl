@@ -17,6 +17,17 @@
 # Check file required for this script exists
 proc checkRequiredFiles { origin_dir} {
   set status true
+  set files [list \
+   "${origin_dir}/hdl/rtl/top.vhd" \
+   "${origin_dir}/dc/Nexys-A7-100T-Master.xdc" \
+  ]
+  foreach ifile $files {
+    if { ![file isfile $ifile] } {
+      puts " Could not find remote file $ifile "
+      set status false
+    }
+  }
+
   return $status
 }
 # Set the reference directory for source file relative paths (by default the value is script directory path)
@@ -116,6 +127,15 @@ set_property -name "revised_directory_structure" -value "1" -objects $obj
 set_property -name "sim.central_dir" -value "$proj_dir/${_xil_proj_name_}.ip_user_files" -objects $obj
 set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
 set_property -name "simulator_language" -value "Mixed" -objects $obj
+set_property -name "target_language" -value "VHDL" -objects $obj
+set_property -name "webtalk.activehdl_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.modelsim_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.questa_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.riviera_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.vcs_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.xcelium_export_sim" -value "1" -objects $obj
+set_property -name "webtalk.xsim_export_sim" -value "1" -objects $obj
+set_property -name "xpm_libraries" -value "XPM_MEMORY" -objects $obj
 
 # Create 'sources_1' fileset (if not found)
 if {[string equal [get_filesets -quiet sources_1] ""]} {
@@ -124,10 +144,24 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
-# Empty (no sources present)
+set files [list \
+ [file normalize "${origin_dir}/hdl/rtl/top.vhd"] \
+]
+add_files -norecurse -fileset $obj $files
+
+# Set 'sources_1' fileset file properties for remote files
+set file "$origin_dir/hdl/rtl/top.vhd"
+set file [file normalize $file]
+set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+set_property -name "file_type" -value "VHDL" -objects $file_obj
+
+
+# Set 'sources_1' fileset file properties for local files
+# None
 
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
+set_property -name "top" -value "top" -objects $obj
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -137,7 +171,13 @@ if {[string equal [get_filesets -quiet constrs_1] ""]} {
 # Set 'constrs_1' fileset object
 set obj [get_filesets constrs_1]
 
-# Empty (no sources present)
+# Add/Import constrs file and set constrs file properties
+set file "[file normalize "$origin_dir/dc/Nexys-A7-100T-Master.xdc"]"
+set file_added [add_files -norecurse -fileset $obj [list $file]]
+set file "$origin_dir/dc/Nexys-A7-100T-Master.xdc"
+set file [file normalize $file]
+set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+set_property -name "file_type" -value "XDC" -objects $file_obj
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
@@ -153,13 +193,152 @@ set obj [get_filesets sim_1]
 
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
+set_property -name "top" -value "top" -objects $obj
+set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
 
 # Set 'utils_1' fileset object
 set obj [get_filesets utils_1]
-# Empty (no sources present)
+# Set 'utils_1' fileset file properties for remote files
+# None
+
+# Set 'utils_1' fileset file properties for local files
+# None
 
 # Set 'utils_1' fileset properties
 set obj [get_filesets utils_1]
+
+
+# Adding sources referenced in BDs, if not already added
+
+
+# Proc to create BD Nexys_A7_Block_Design
+proc cr_bd_Nexys_A7_Block_Design { parentCell } {
+
+  # CHANGE DESIGN NAME HERE
+  set design_name Nexys_A7_Block_Design
+
+  common::send_gid_msg -ssname BD::TCL -id 2010 -severity "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+
+  create_bd_design $design_name
+
+  set bCheckIPsPassed 1
+  ##################################################################
+  # CHECK IPs
+  ##################################################################
+  set bCheckIPs 1
+  if { $bCheckIPs == 1 } {
+     set list_check_ips "\ 
+  xilinx.com:ip:microblaze_mcs:3.0\
+  "
+
+   set list_ips_missing ""
+   common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+
+   foreach ip_vlnv $list_check_ips {
+      set ip_obj [get_ipdefs -all $ip_vlnv]
+      if { $ip_obj eq "" } {
+         lappend list_ips_missing $ip_vlnv
+      }
+   }
+
+   if { $list_ips_missing ne "" } {
+      catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+      set bCheckIPsPassed 0
+   }
+
+  }
+
+  if { $bCheckIPsPassed != 1 } {
+    common::send_gid_msg -ssname BD::TCL -id 2023 -severity "WARNING" "Will not continue with creation of design due to the error(s) above."
+    return 3
+  }
+
+  variable script_folder
+
+  if { $parentCell eq "" } {
+     set parentCell [get_bd_cells /]
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+
+  # Create interface ports
+
+  # Create ports
+  set reset [ create_bd_port -dir I -type rst reset ]
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_LOW} \
+ ] $reset
+  set sys_clock [ create_bd_port -dir I -type clk -freq_hz 100000000 sys_clock ]
+  set_property -dict [ list \
+   CONFIG.PHASE {0.0} \
+ ] $sys_clock
+
+  # Create instance: microblaze_mcs_0, and set properties
+  set microblaze_mcs_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze_mcs:3.0 microblaze_mcs_0 ]
+  set_property -dict [ list \
+   CONFIG.CLK_BOARD_INTERFACE {sys_clock} \
+   CONFIG.RESET_BOARD_INTERFACE {reset} \
+   CONFIG.USE_BOARD_FLOW {true} \
+ ] $microblaze_mcs_0
+
+  # Create port connections
+  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins microblaze_mcs_0/Reset]
+  connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins microblaze_mcs_0/Clk]
+
+  # Create address segments
+
+  # Perform GUI Layout
+  regenerate_bd_layout -layout_string {
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-483,-379",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -10 -y -140 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y -120 -defaultsOSRD
+preplace inst microblaze_mcs_0 -pg 1 -lvl 1 -x 190 -y -130 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 NJ -140
+preplace netloc reset_1 1 0 1 NJ -120
+levelinfo -pg 1 -10 190 380
+pagesize -pg 1 -db -bbox -sgen -130 -200 380 140
+"
+}
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+
+  validate_bd_design
+  save_bd_design
+  close_bd_design $design_name 
+}
+# End of cr_bd_Nexys_A7_Block_Design()
+cr_bd_Nexys_A7_Block_Design ""
+set_property REGISTERED_WITH_MANAGER "1" [get_files Nexys_A7_Block_Design.bd ] 
+set_property SYNTH_CHECKPOINT_MODE "Hierarchical" [get_files Nexys_A7_Block_Design.bd ] 
+
+
+# Create wrapper file for Nexys_A7_Block_Design.bd
+make_wrapper -files [get_files Nexys_A7_Block_Design.bd] -import -top
 
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs -quiet synth_1] ""]} {
@@ -181,6 +360,7 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
+set_property -name "incremental_checkpoint" -value "$proj_dir/Nexys-A7-100T.srcs/utils_1/imports/synth_1/Nexys_A7_Block_Design_wrapper.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
 
