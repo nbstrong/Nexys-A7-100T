@@ -161,6 +161,7 @@ set_property -name "file_type" -value "VHDL" -objects $file_obj
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
 set_property -name "top" -value "top" -objects $obj
+set_property -name "top_auto_set" -value "0" -objects $obj
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -193,15 +194,12 @@ set obj [get_filesets sim_1]
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
 set_property -name "top" -value "top" -objects $obj
+set_property -name "top_auto_set" -value "0" -objects $obj
 set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
 
 # Set 'utils_1' fileset object
 set obj [get_filesets utils_1]
-# Set 'utils_1' fileset file properties for remote files
-# None
-
-# Set 'utils_1' fileset file properties for local files
-# None
+# Empty (no sources present)
 
 # Set 'utils_1' fileset properties
 set obj [get_filesets utils_1]
@@ -342,7 +340,6 @@ if { $obj != "" } {
 
 }
 set obj [get_runs synth_1]
-set_property -name "incremental_checkpoint" -value "$proj_dir/Nexys-A7-100T.srcs/utils_1/imports/synth_1/Nexys_A7_Block_Design_wrapper.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
 
