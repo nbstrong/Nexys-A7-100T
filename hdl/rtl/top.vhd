@@ -51,12 +51,6 @@ architecture rtl of top is
     alias rst_n   : std_logic is CPU_RESETN;
     -- ATTRIBUTES ----------------------------------------------------------------
     -- COMPONENTS ----------------------------------------------------------------
-    component Nexys_A7_Block_Design_wrapper is
-        port (
-          sys_clock : in std_logic;
-          reset     : in std_logic
-        );
-    end component Nexys_A7_Block_Design_wrapper;
 begin ----------------------------------------------------------------------------
     LED     <= SW;
     LED17_R <= counter(counter'left);
@@ -70,12 +64,5 @@ begin --------------------------------------------------------------------------
             end if;
         end if;
     end process;
-
-    microblaze_wrapper_0 : component Nexys_A7_Block_Design_wrapper
-    -- microblaze_wrapper_0 : entity microblaze_wrapper(structural) -- TODO: Make this work.
-        port map (
-            sys_clock => sys_clk,
-            reset     => rst_n
-        );
 
 end rtl; -------------------------------------------------------------------------
